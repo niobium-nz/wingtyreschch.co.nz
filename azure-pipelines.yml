@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
 resources: 
   repositories:
@@ -30,7 +30,7 @@ stages:
   jobs:
   - template: pipelines/jobs/StaticWebsiteDeploy.yml@devops
     parameters:
-      buildAgentVmImage: 'ubuntu-latest'
+      buildAgentVmImage: 'windows-latest'
       azureServiceConnection: 'niobium-chchwingtyres'
       resourceGroupName: 'niobium-chchwingtyres'
       storageAccountName: 'websitechchwingtyres'
