@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 resources: 
   repositories:
@@ -30,11 +30,11 @@ stages:
   jobs:
   - template: pipelines/jobs/StaticWebsiteDeploy.yml@devops
     parameters:
-      buildAgentVmImage: 'windows-latest'
+      buildAgentVmImage: 'ubuntu-latest'
       azureServiceConnection: 'niobium-chchwingtyres'
       resourceGroupName: 'niobium-chchwingtyres'
       storageAccountName: 'websitechchwingtyres'
       #cdnCustomDomainName: 'www.chchwingtyres.co.nz'
       enableCdn: false
       checkoutDevopsStep:
-       checkout: devops
+        checkout: devops
