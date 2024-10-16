@@ -34,7 +34,6 @@ stages:
       azureServiceConnection: 'niobium-chchwingtyres'
       resourceGroupName: 'niobium-chchwingtyres'
       storageAccountName: 'websitechchwingtyres'
-      #cdnCustomDomainName: 'www.chchwingtyres.co.nz'
       enableCdn: false
       checkoutDevopsStep:
         checkout: devops
