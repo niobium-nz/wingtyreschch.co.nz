@@ -10,7 +10,7 @@ resources:
     endpoint: CodRepo
     type: git
     name: cod/Cod.Infrastructures
-    ref: main
+    ref: master
 
 stages:
 - stage: Build
